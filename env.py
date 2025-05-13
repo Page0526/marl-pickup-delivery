@@ -366,7 +366,7 @@ if __name__=="__main__":
 
     # Agents
     # Initialize agents
-    from greedyagent import GreedyAgents as Agents
+    from agents.greedyagent import GreedyAgents as Agents
     agents = Agents()   # You should define a default parameters here
     agents.init_agents(state) # You have a change to init states which can be used or not. Depend on your choice
     print("Agents initialized.")
