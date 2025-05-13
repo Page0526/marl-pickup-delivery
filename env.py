@@ -131,7 +131,7 @@ class Environment:
         """
         selected_packages = []
         for i in range(len(self.packages)):
-            if self.packages[i].start_time <= self.t:
+            if self.packages[i].start_time == self.t:
                 selected_packages.append(self.packages[i])
                 self.packages[i].status = 'waiting'
 
@@ -181,8 +181,6 @@ class Environment:
         if len(actions) != len(self.robots):
             raise ValueError("The number of actions must match the number of robots.")
 
-        #print("Package env: ")
-        #print([p.status for p in self.packages])
 
         # -------- Process Movement --------
         proposed_positions = []
