@@ -1,6 +1,6 @@
 from env import Environment
-#from agent import Agents
-from greedyagent import GreedyAgents as Agents
+from agent import Agents
+# from greedyagent import GreedyAgents as Agents
 
 import numpy as np
 
@@ -24,7 +24,7 @@ if __name__=="__main__":
     state = env.reset()
     agents = Agents()
     agents.init_agents(state)
-    print(state)
+    # print(state)
     #env.render()
     done = False
     t = 0
