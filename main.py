@@ -1,6 +1,6 @@
 from env import Environment
-#from agent import Agents
-from agents.greedyagent import GreedyAgents as Agents
+from agents.agent_A_star import Agents
+# from agents.greedyagent import GreedyAgents as Agents
 
 import numpy as np
 
